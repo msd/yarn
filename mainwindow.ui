@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="add_yarn">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>170</y>
+      <width>80</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add Yarns</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="add_type">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>150</y>
+      <width>141</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add Yarn Types</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>add_type</sender>
+   <signal>released()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>new_type_cb()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>473</x>
+     <y>178</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>467</x>
+     <y>350</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>add_yarn</sender>
+   <signal>released()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>new_item_cb()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>312</x>
+     <y>195</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>273</x>
+     <y>309</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>new_type_cb()</slot>
+  <slot>new_item_cb()</slot>
+ </slots>
+</ui>
