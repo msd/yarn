@@ -13,7 +13,7 @@ type_add_form::type_add_form(QWidget *parent) :
 type_add_model type_add_form::model()
 {
     type_add_model m{};
-    m.compositon = ui->composition->text();
+    m.composition = ui->composition->text();
     m.name = ui->name->text();
     m.weight = ui->weight->text();
     m.notes = ui->notes->text();

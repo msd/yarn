@@ -10,7 +10,7 @@ class type_add_form;
 
 struct type_add_model
 {
-    QString name, weight, compositon, source, notes;
+    QString name, weight, composition, source, notes;
 };
 
 class type_add_form : public QDialog
