@@ -13,6 +13,11 @@ class item_add_form;
 struct item_add_model
 {
     QString name, type, source, notes;
+
+    QString to_string()
+    {
+        return "<Name: " + name + ", Type: " + type + ", Source " + source + ", Notes: " + notes + ">";
+    }
 };
 
 class item_add_form : public QDialog
