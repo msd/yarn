@@ -1,7 +1,7 @@
 #ifndef VIEWS_ADD_ITEM_ADD_FORM_H
 #define VIEWS_ADD_ITEM_ADD_FORM_H
 
-#include <QFrame>
+#include <QDialog>
 
 namespace views {
 namespace add {
@@ -10,7 +10,12 @@ namespace Ui {
 class item_add_form;
 }
 
-class item_add_form : public QFrame
+struct item_add_model
+{
+    QString name, type, source, notes;
+};
+
+class item_add_form : public QDialog
 {
     Q_OBJECT
 
@@ -18,6 +23,13 @@ public:
     explicit item_add_form(QWidget *parent = nullptr);
     ~item_add_form();
 
+    item_add_model model();
+    bool confirm_closing();
+public slots:
+    void reject();
+    void submit();
+signals:
+    void submitted(item_add_model);
 private:
     Ui::item_add_form *ui;
 };

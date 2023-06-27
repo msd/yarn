@@ -21,6 +21,8 @@ set(PROJECT_SOURCES
         mainwindow.ui
         type_add_form.h type_add_form.cpp type_add_form.ui
         type_edit_form.h type_edit_form.cpp type_edit_form.ui
+        item_add_form.h item_add_form.cpp item_add_form.ui
+        item_edit_form.h item_edit_form.cpp item_edit_form.ui
         ${TS_FILES}
 )
 

@@ -1,7 +1,6 @@
 #include "type_edit_form.h"
 #include "ui_type_edit_form.h"
 #include <QMessageBox>
-#include <QPushButton>
 
 namespace views {
 namespace edit2 {

@@ -2,7 +2,6 @@
 #define type_ADD_FORM_H
 
 #include <QDialog>
-#include <QFrame>
 
 namespace Ui {
 class type_add_form;

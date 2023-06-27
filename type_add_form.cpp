@@ -1,7 +1,6 @@
 #include "type_add_form.h"
 #include "ui_type_add_form.h"
 #include <QMessageBox>
-#include <QPushButton>
 
 type_add_form::type_add_form(QWidget *parent) :
     QDialog(parent),
