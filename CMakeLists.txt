@@ -20,9 +20,7 @@ set(PROJECT_SOURCES
         mainwindow.h
         mainwindow.ui
         type_add_form.h type_add_form.cpp type_add_form.ui
-        edit_view.h edit_view.cpp
-        base_model.h base_model.cpp
-        material.h material.cpp
+        type_edit_form.h type_edit_form.cpp type_edit_form.ui
         ${TS_FILES}
 )
 
