@@ -22,6 +22,7 @@ private slots:
 
     void new_type_cb();
     void new_item_cb();
+    void delete_selected_cb();
     void handle_new_type_submit(type_add_model new_type);
     void handle_new_item_submit(views::add::item_add_model new_item);
 

@@ -23,6 +23,7 @@ set(PROJECT_SOURCES
         type_edit_form.h type_edit_form.cpp type_edit_form.ui
         item_add_form.h item_add_form.cpp item_add_form.ui
         item_edit_form.h item_edit_form.cpp item_edit_form.ui
+        breeze.qrc
         ${TS_FILES}
 )
 

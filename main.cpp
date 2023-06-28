@@ -4,9 +4,17 @@
 #include <QLocale>
 #include <QTranslator>
 
+#include <QFile>
+#include <QTextStream>
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
+
+    QFile file(":/dark/stylesheet.qss");
+    file.open(QFile::ReadOnly | QFile::Text);
+    QTextStream stream(&file);
+    a.setStyleSheet(stream.readAll());
 
     QTranslator translator;
     const QStringList uiLanguages = QLocale::system().uiLanguages();
@@ -17,6 +25,7 @@ int main(int argc, char *argv[])
             break;
         }
     }
+
     MainWindow w;
     w.show();
     return a.exec();
