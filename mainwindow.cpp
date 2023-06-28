@@ -46,6 +46,7 @@ void MainWindow::new_item_cb()
 
 void MainWindow::delete_selected_cb()
 {
+
     qInfo() << "DELTEING LOL"; //fixme
 
 }
